@@ -1,0 +1,73 @@
+.center{
+   display : block;
+   margin-left : auto;
+   margin-right : auto;
+}
+body{
+    background-color : #40a8b7;
+}
+@keyframes fadeInAnimation {
+    0%{ opacity: 0;}
+    100% {opacity: 1;}
+}
+.navigator{
+    border-width : 0;
+    background-color : #40a8b7;
+}
+.navigator:hover{
+    transition-duration : 0.4s;
+    transform: scale(1.3);
+}
+#homeicon{
+    position : absolute;
+    left : 560px;
+    overflow: hidden;
+}
+#menuicon{
+    position : absolute;
+    left : 620px;
+    overflow: hidden;
+}
+
+#contacticon{
+    position : absolute;
+    left : 680px;
+    overflow: hidden;
+}
+
+@font-face{
+    font-family : headings_font;
+    src : url(Rougant_PERSONAL_USE_ONLY.otf)
+}
+.food-heading {
+    font-weight: bold;
+    position : relative;
+    left : 310px;
+    color: #fff;
+    font-size: 27px;
+    font-family: headings_font;
+    cursor: pointer;
+}
+.food-heading::after{
+    content: ' ';
+    position : absolute;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: #fff;
+    transition: width .7s;
+}
+.food-heading:hover:after {
+    width: 100%;
+}
+.content{
+    position : relative;
+    left : 310px;
+    color: #284046;
+    font-size: 20px;
+    font-family: headings_font;
+    border-spacing: 20px;
+    overflow: hidden;
+    overscroll-behavior: contain;
+}
